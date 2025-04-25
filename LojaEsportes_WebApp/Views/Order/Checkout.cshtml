@@ -1,0 +1,48 @@
+@model Order
+
+<h2>Confira agora</h2>
+<p>Insira seus dados e enviaremos seus produtos imediatamente!</p>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form asp-action="Checkout" method="post">
+
+    <h3>Enviar para</h3>
+    
+    <div class="form-group">
+        <label>Nome:</label><input asp-for="Name" class="form-control" />
+    </div>
+
+    <h3>Endereço</h3>
+    <div class="form-group">
+        <label>Linha 1:</label><input asp-for="Line1" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Linha 2:</label><input asp-for="Line2" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Linha 3:</label><input asp-for="Line3" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Cidade:</label><input asp-for="City" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Estado:</label><input asp-for="State" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>CEP:</label><input asp-for="Zip" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>País:</label><input asp-for="Country" class="form-control" />
+    </div>
+
+    <h3>Opções</h3>
+    <div class="checkbox">
+        <label>
+            <input asp-for="GiftWrap" /> Embrulhe esses itens para presente
+        </label>
+    </div>
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Complete Order" />
+    </div>
+</form>

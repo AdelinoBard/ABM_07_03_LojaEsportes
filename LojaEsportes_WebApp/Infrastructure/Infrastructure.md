@@ -1,0 +1,1 @@
+**Dica:** A pasta *Infrastructure* é destinada a classes que fornecem a infraestrutura técnica da aplicação (como integrações, utilitários e serviços de suporte), mas que não fazem parte diretamente da lógica de negócios principal. Esta é uma convenção comum em projetos .NET, porém você pode adaptar ou até mesmo ignorar essa estrutura conforme as necessidades do seu projeto.
